@@ -1,44 +1,59 @@
-
-  body {
+ body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-        form {
-            max-width: 500px;
-            margin: auto;
-            background: #fff;
+
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
             padding: 20px;
+            background: #ffffff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
+
+        .form-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
         }
-        input, select, button {
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group button {
             width: 100%;
             padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             border-radius: 4px;
-            font-size: 1em;
         }
-        button {
-            background-color: #4CAF50;
-            color: white;
+
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+
+        .form-actions {
+            text-align: center;
+        }
+
+        .form-actions button {
+            width: auto;
+            background-color: #007bff;
+            color: #fff;
             border: none;
             cursor: pointer;
+            padding: 10px 20px;
         }
-        button:hover {
-            background-color: #45a049;
-        }
-        .radio-group {
-            display: flex;
-            justify-content: space-between;
-        }
-        .radio-group label {
-            margin-right: 10px;
+
+        .form-actions button:hover {
+            background-color: #0056b3;
         }
